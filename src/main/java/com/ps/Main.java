@@ -61,7 +61,7 @@ public class Main {
     }
 
     public static void showAvailableBooks() {
-        System.out.println("/n Available books: ");
+        System.out.println("\n Available books: ");
         for (Books book : books) {
             if (!book.isCheckedout()) {
                 System.out.print("Id: " + book.getId() + "\n Isbn: " + book.getIsbn() + " Title: " + book.getTitle() + "\n");
@@ -100,9 +100,6 @@ public class Main {
 
     }
 
-    public static void checkIn() {
-    }
-
     public static void showCheckedOutBooks() {
         for (Books book : books) {
             if (book.isCheckedout()) {
@@ -118,11 +115,26 @@ public class Main {
         scanner.nextLine();
         String response = scanner.nextLine().toUpperCase();
         if (response.startsWith("C")) {
-//            checkIn();
+            checkIn();
 
         }
 
 
+    }
+
+    public static void checkIn() {
+            System.out.println("Whats is the id of the book you want to check in?");
+//            scanner.nextLine();
+            int response = scanner.nextInt();
+        for(Books book : books){
+            if (response == book.getId() && book.isCheckedout()){
+                book.setCheckedout(false);
+                book.setCheckedOutTo(null);
+                System.out.println("The book Id: " + "\n" + book.getId() + "\nWith the title: " + book.getTitle() + " \nHas been checked in\n");
+                return;
+            }
+        }
+                System.out.println("This book can not be checked in");
     }
 
 }
