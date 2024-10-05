@@ -128,9 +128,13 @@ public class Main {
             int response = scanner.nextInt();
         for(Books book : books){
             if (response == book.getId() && book.isCheckedout()){
+                System.out.println("What is your name");
+                scanner.nextLine();
+                String name = scanner.nextLine();
                 book.setCheckedout(false);
                 book.setCheckedOutTo(null);
-                System.out.println("The book Id: " + "\n" + book.getId() + "\nWith the title: " + book.getTitle() + " \nHas been checked in\n");
+                System.out.println("\n The book Id: " + "\n" + book.getId() + "\nWith the title: " + book.getTitle() + " \nHas been checked in by: "
+                        + name + "\n");
                 return;
             }
         }
