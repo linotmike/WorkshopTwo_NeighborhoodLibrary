@@ -46,7 +46,7 @@ public class Main {
                     showAvailableBooks();
                     break;
                 case 2:
-                    //showCheckedOutBooks();
+                    showCheckedOutBooks();
                     break;
                 case 3:
                     System.out.println("You choose to Exit");
@@ -68,7 +68,7 @@ public class Main {
             }
 
         }
-        System.out.print("\n Do you want to checkout a book 1) Yes 2)No \n");
+        System.out.print("\n Do you want to checkout a book 1) Yes 2) Exit \n");
         int response = scanner.nextInt();
         if (response == 1) {
             checkout();
@@ -89,7 +89,7 @@ public class Main {
                 System.out.println(name + " You have successfully checked out: " + book.getTitle());
                 System.out.println("What would you like to do next? 1)check out another book 2) quit");
                 int next = scanner.nextInt();
-                if(next == 1){
+                if (next == 1) {
                     checkout();
                 }
                 return;
@@ -101,6 +101,24 @@ public class Main {
     }
 
     public static void checkIn() {
+    }
+
+    public static void showCheckedOutBooks() {
+        for (Books book : books) {
+            if (book.isCheckedout()) {
+                System.out.println("Checked out books :" + "\n ID: " + book.getId() + " Isbn " + book.getIsbn() + " Title " + book.getTitle());
+            }
+
+        }
+        System.out.println("What would you like to do? C) check in a book X) Exit");
+        scanner.nextLine();
+        String response = scanner.nextLine().toUpperCase();
+        if (response.startsWith("C")) {
+//            checkIn();
+
+        }
+
+
     }
 
 }
