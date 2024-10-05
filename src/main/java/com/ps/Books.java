@@ -5,17 +5,17 @@ public class Books {
     private int id;
     private String isbn;
     private String title;
-    private boolean isCheckout;
+    private boolean isCheckedout;
     private String checkedOutTo;
 
     //constructors
 
 
-    public Books(int id, String isbn, String title, boolean isCheckout, String checkedOutTo) {
+    public Books(int id, String isbn, String title, boolean isCheckedout, String checkedOutTo) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
-        this.isCheckout = isCheckout;
+        this.isCheckedout = isCheckedout;
         this.checkedOutTo = checkedOutTo;
     }
 
@@ -43,12 +43,12 @@ public class Books {
         this.title = title;
     }
 
-    public boolean isCheckout() {
-        return isCheckout;
+    public boolean isCheckedout() {
+        return isCheckedout;
     }
 
-    public void setCheckout(boolean checkout) {
-        isCheckout = checkout;
+    public void setCheckedout(boolean ischeckedout) {
+        isCheckedout = ischeckedout;
     }
 
     public String getCheckedOutTo() {
@@ -57,5 +57,9 @@ public class Books {
 
     public void setCheckedOutTo(String checkedOutTo) {
         this.checkedOutTo = checkedOutTo;
+    }
+
+    public void SetIsCheckedout(boolean isCheckedout) {
+        this.isCheckedout =isCheckedout;
     }
 }
