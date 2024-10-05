@@ -31,11 +31,55 @@ public class Main {
 
 
 
-//        do {
-//
-//
-//        }while(mainMenuCommand ;
+        do {
+            System.out.println("Welcome to the Neighborhood Library");
+            System.out.println("What would you like to do?");
+            System.out.println("1) Show available books");
+            System.out.println("2) Show Checked out books");
+            System.out.println("3) Exit");
+            mainMenuCommand = scanner.nextInt();
+
+            switch(mainMenuCommand){
+                case 1:
+                    showAvailableBooks();
+                    break;
+                case 2:
+                    //showCheckedOutBooks();
+                    break;
+                case 3:
+                    System.out.println("You choose to Exit");
+                default:
+                    System.out.println("error");
+            }
+
+
+
+
+
+        }while(mainMenuCommand != 3);
+
+
 
     }
+    public static void showAvailableBooks(){
+        System.out.println("/n Available books: ");
+        for (Books book : books) {
+            if(!book.isCheckout()){
+                System.out.print("Id: " + book.getId() + "\n Isbn: " + book.getIsbn() + " Title: " + book.getTitle() + "\n");
+            }
+        }
+        System.out.print("\n Do you want to checkout a book 1) Yes 2)No");
+        int response = scanner.nextInt();
+        if(response == 1){
+           checkout(); ;
+        }
+
+    }
+    public static void checkout(){
+
+
+    }
+
+    public static void checkIn(){}
 
 }
