@@ -23,6 +23,7 @@ The system uses an array of 20 books, with each book containing attributes such 
 To use the Library Management System, simply run the application from the command line. Upon starting, you'll be presented with a menu where you can view available books, check out or return books, and see which books are currently checked out. Select the appropriate option, enter the book's ID when prompted, and follow the on-screen instructions to manage the library's inventory.
 
 ## Screen recording
+[Screen Recording](.src/demo/demo.mp4)
 
 
 ------------------
