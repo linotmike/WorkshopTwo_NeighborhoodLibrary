@@ -11,7 +11,7 @@ The system uses an array of 20 books, with each book containing attributes such 
 ## Table of Contents
 
 - [Usage](#usage)
-    - [Screen Recording](#screen-recording)
+    - [Screenshot](#screenshot)
 - [Features](#features)
 - [How It Works](#How-It-Works)
 - [Prerequisites](#prerequisites)
@@ -22,8 +22,12 @@ The system uses an array of 20 books, with each book containing attributes such 
 ## Usage
 To use the Library Management System, simply run the application from the command line. Upon starting, you'll be presented with a menu where you can view available books, check out or return books, and see which books are currently checked out. Select the appropriate option, enter the book's ID when prompted, and follow the on-screen instructions to manage the library's inventory.
 
-## Screen recording
-[Screen Recording](.src/demo/demo.mp4)
+## Screenshot
+
+[Screenshot ](./src/demo/First.png)
+[Screenshot ](./src/demo/second.png)
+[Screenshot ](./src/demo/Third.png)
+[Screenshot ](./src/demo/Fourth.png)
 
 
 ------------------
@@ -46,7 +50,7 @@ To use the Library Management System, simply run the application from the comman
 
 ## Prerequisites
 <ul>
-<li>Java 8 or above
+<li>Java 7 or above
 <li>Any Java IDE (e.g., IntelliJ IDEA, Eclipse)
 </ul>
 ------------------
