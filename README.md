@@ -24,10 +24,10 @@ To use the Library Management System, simply run the application from the comman
 
 ## Screenshot
 
-[Screenshot ](./src/demo/First.png)
-[Screenshot ](./src/demo/second.png)
-[Screenshot ](./src/demo/Third.png)
-[Screenshot ](./src/demo/Fourth.png)
+![Screenshot ](./src/demo/First.png)
+![Screenshot ](./src/demo/second.png)
+![Screenshot ](./src/demo/Third.png)
+![Screenshot ](./src/demo/Fourth.png)
 
 
 ------------------
